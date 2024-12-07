@@ -1,5 +1,5 @@
-"use client";
+'use client';
 
 export default function RootNotFound() {
-  return <div>RootNotFound</div>;
+  return 'RootNotFound';
 }
