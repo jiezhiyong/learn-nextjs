@@ -6,7 +6,7 @@
  */
 export default function RootTemplate({ children }: { children: React.ReactNode }) {
   return (
-    <section data-RootTemplate className="m-4 border border-dashed border-pink-400 p-4">
+    <section data-root-template className="m-4 border border-dashed border-pink-400 p-4">
       {children}
     </section>
   );
