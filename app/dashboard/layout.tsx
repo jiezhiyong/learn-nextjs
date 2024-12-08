@@ -1,8 +1,12 @@
+import SideNav from './components/side-nav';
+
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   return (
-    <section className="border border-blue-400 border-dashed p-4 m-4">
-      <nav>Dashboard Nav</nav>
-      {children}
-    </section>
+    <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
+      <div className="w-full flex-none md:w-64">
+        <SideNav />
+      </div>
+      <div className="grow p-6 md:overflow-y-auto md:p-12">{children}</div>
+    </div>
   );
 }
