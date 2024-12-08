@@ -1,6 +1,13 @@
 import { sql } from '@vercel/postgres';
-import { CustomerField, CustomersTableType, InvoiceForm, InvoicesTable, LatestInvoiceRaw, Revenue } from '../types';
 import { formatCurrency } from '../utils';
+import {
+  Revenue,
+  LatestInvoiceRaw,
+  InvoicesTable,
+  InvoiceForm,
+  CustomerField,
+  CustomersTableType,
+} from '../app/dashboard/types';
 
 export async function fetchRevenue() {
   try {
