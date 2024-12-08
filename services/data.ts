@@ -1,5 +1,5 @@
 import { sql } from '@vercel/postgres';
-import { formatCurrency } from '../utils';
+import { formatCurrency } from '../app/dashboard/utils';
 import {
   Revenue,
   LatestInvoiceRaw,

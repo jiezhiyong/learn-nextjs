@@ -1,4 +1,4 @@
-import { generateYAxis } from '@utils/index';
+import { generateYAxis } from '../utils/index';
 import { CalendarIcon } from '@heroicons/react/24/outline';
 import { fetchRevenue } from '@services/data';
 

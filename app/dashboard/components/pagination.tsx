@@ -1,7 +1,7 @@
 'use client';
 
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
-import { generatePagination } from '@utils/index';
+import { generatePagination } from '../utils/index';
 import Link from 'next/link';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { twMerge } from 'tailwind-merge';
