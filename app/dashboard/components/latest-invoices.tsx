@@ -1,6 +1,6 @@
 import { ArrowPathIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
-import { fetchLatestInvoices } from '@services/data';
+import { fetchLatestInvoices } from '../services/data';
 import { twMerge } from 'tailwind-merge';
 
 export default async function LatestInvoices() {

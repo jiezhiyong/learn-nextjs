@@ -4,7 +4,7 @@ import { CustomerField, InvoiceForm } from '../../types';
 import { CheckIcon, ClockIcon, CurrencyDollarIcon, UserCircleIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { Button } from '@components/button';
-import { updateInvoice, State } from '@services/actions';
+import { updateInvoice, State } from '../../services/actions';
 import { useActionState } from 'react';
 
 export default function EditInvoiceForm({ invoice, customers }: { invoice: InvoiceForm; customers: CustomerField[] }) {

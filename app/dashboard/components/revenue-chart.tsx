@@ -1,6 +1,6 @@
 import { generateYAxis } from '../utils/index';
 import { CalendarIcon } from '@heroicons/react/24/outline';
-import { fetchRevenue } from '@services/data';
+import { fetchRevenue } from '../services/data';
 
 // This component is representational only.
 // For data visualization UI, check out:

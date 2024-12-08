@@ -4,7 +4,7 @@ import { CustomerField } from '../../types/index';
 import Link from 'next/link';
 import { CheckIcon, ClockIcon, CurrencyDollarIcon, UserCircleIcon } from '@heroicons/react/24/outline';
 import { Button } from '@components/button';
-import { createInvoice, State } from '@services/actions';
+import { createInvoice, State } from '../../services/actions';
 import { useActionState } from 'react';
 
 export default function Form({ customers }: { customers: CustomerField[] }) {

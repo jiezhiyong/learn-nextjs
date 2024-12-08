@@ -1,4 +1,4 @@
-import { fetchFilteredCustomers } from '@services/data';
+import { fetchFilteredCustomers } from '../services/data';
 import CustomersTable from '../components/customers-table';
 import { Metadata } from 'next';
 
@@ -15,7 +15,7 @@ export default async function Page(props: {
   const searchParams = await props.searchParams;
   const query = searchParams?.query || '';
 
-  // const customers = await fetchFilteredCustomers(query);
+  const customers = await fetchFilteredCustomers(query);
 
-  return <main>{/* <CustomersTable customers={customers} /> */}</main>;
+  return <main>{<CustomersTable customers={customers} />}</main>;
 }
