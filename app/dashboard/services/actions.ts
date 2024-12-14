@@ -30,6 +30,9 @@ export type State = {
 };
 
 export async function createInvoice(prevState: State, formData: FormData) {
+  const rawFormData = Object.fromEntries(formData.entries());
+  console.log(rawFormData);
+
   // Validate form fields using Zod
   const validatedFields = CreateInvoice.safeParse({
     customerId: formData.get('customerId'),

@@ -5,9 +5,5 @@
  * 这意味着，当用户在共享模板的路由之间导航时，将挂载 child 的新实例，重新创建 DOM 元素，不会在 Client Components 中保留状态，并且 effects 会重新同步
  */
 export default function RootTemplate({ children }: { children: React.ReactNode }) {
-  return (
-    <section data-root-template className="m-4 border border-dashed border-pink-400 p-4">
-      {children}
-    </section>
-  );
+  return children;
 }
